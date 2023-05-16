@@ -15,3 +15,11 @@ spec:
       containers:
       - name: nginx 
         image: nginx:placeholder
+        volumeMounts:
+        - name: content
+          mountPath: /usr/share/nginx/html
+          readOnly: true
+      volumes:
+      - name: content
+        configMap:
+          name: kargo-demo-content
