@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  super-import-key: "yes"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: critical-config
