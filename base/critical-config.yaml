@@ -1,6 +1,7 @@
 apiVersion: v1
 data:
   super-import-key: "yes"
+  another-key: "of course"
 kind: ConfigMap
 metadata:
   creationTimestamp: null
