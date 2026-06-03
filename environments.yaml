@@ -1,0 +1,13 @@
+environments:
+  - name: dev
+    bake_minutes: 5      # shortened for the POC
+    promotion: auto
+    parallel: 20
+  - name: staging
+    bake_minutes: 10
+    promotion: auto
+    parallel: 10
+  - name: prod
+    bake_minutes: 0
+    promotion: manual
+    parallel: 5
