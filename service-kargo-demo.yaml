@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: kargo-demo
 spec:
-  type: NodePort
+  ports:
+  - nodePort: 32080
+    port: 3000
+    protocol: TCP
+    targetPort: 80
   selector:
     app: kargo-demo
-  ports:
-  - protocol: TCP
-    port: 3000
-    targetPort: 80
-    nodePort: placeholder
+  type: NodePort
